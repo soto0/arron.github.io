@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="fonts/style2.css">
+    <link rel="stylesheet" href="fonts/style3.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="images/logo.svg" alt="" class="logo">
+            </a>
+            <button class="header__menu-btn">
+                <div class="menu-btn__lines first"></div>
+                <div class="menu-btn__lines second"></div>
+                <div class="menu-btn__lines  third"></div>
+            </button>
+            <nav class="header__menu">
+                <img src="images/menu-logo.svg" alt="" class="header__menu-logo">
+                <ul class="menu__links">
+                    <li class="menu__link">
+                        <a href="#" class="menu__link-text">Наши услуги</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#" class="menu__link-text">О компании</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#" class="menu__link-text">Отзывы</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#" class="menu__link-text">Выполненные заказы</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#" class="menu__link-text">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__address">
+                <img src="images/header-address.svg" alt="" class="address__icon">
+                <div class="address__text">г. Кишинев, ул. Бэнулеску Бодони, д.33</div>
+                <a href="#" class="address__link">Мы на карте</a>
+            </div>
+            <div class="header__numbers">
+                <a href="tel:069827738" class="number">069 82 77 38</a>
+                <span class="number__line">/</span>
+                <a href="tel:079927738" class="number">079 92 77 38</a>
+            </div>
+            <button class="header__btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7345 12.1712V14.4647C15.7354 14.6777 15.6917 14.8884 15.6062 15.0835C15.5207 15.2786 15.3954 15.4537 15.2382 15.5977C15.081 15.7416 14.8954 15.8512 14.6933 15.9194C14.4913 15.9876 14.2771 16.013 14.0647 15.9938C11.7076 15.7382 9.44346 14.9343 7.4542 13.6467C5.60344 12.4729 4.03433 10.9068 2.85828 9.05958C1.56375 7.0651 0.758135 4.79431 0.506706 2.43118C0.487564 2.21977 0.512738 2.00669 0.580624 1.80552C0.648509 1.60434 0.75762 1.41948 0.901009 1.2627C1.0444 1.10592 1.21892 0.980662 1.41347 0.894892C1.60802 0.809122 1.81833 0.764724 2.03102 0.764524H4.32898C4.70071 0.760873 5.0611 0.892259 5.34296 1.1342C5.62482 1.37613 5.80892 1.71211 5.86095 2.0795C5.95794 2.81349 6.13781 3.53418 6.39714 4.22781C6.5002 4.50145 6.5225 4.79884 6.46141 5.08474C6.40032 5.37065 6.25839 5.63308 6.05244 5.84095L5.07964 6.81189C6.17006 8.7259 7.75788 10.3107 9.67556 11.399L10.6484 10.4281C10.8566 10.2225 11.1196 10.0809 11.406 10.0199C11.6925 9.95892 11.9904 9.98118 12.2646 10.084C12.9595 10.3429 13.6816 10.5224 14.417 10.6192C14.7891 10.6716 15.1289 10.8587 15.3718 11.1448C15.6148 11.431 15.7438 11.7962 15.7345 12.1712Z" fill="#E2001A"/>
+                </svg> 
+            </button>
+            <div class="background-blur"></div>
+            <div class="header__popup-bg">
+                <div class="header__popup">
+                    <form action="#" class="popup__form">
+                        <img src="images/popup-close.svg" alt="" class="popup__close">
+                        <div class="popup__title">Оставьте заявку на
+                            <p class="popup__title--color"><span>бесплатную</span> консультацию</p>
+                        </div>
+                        <input type="text" class="popup__input" placeholder="Имя" required>
+                        <input type="tel" class="popup__input" placeholder="Телефон" required>
+                        <button class="popup__btn">Получить консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="home">
+            <img src="images/bg.svg" alt="" class="home__bg-icon home__first">
+            <div class="container">
+                <div class="home__up">
+                    <div class="home__texts">
+                        <div class="home__title">Проблемы с Вашим устройством?</div>
+                        <div class="home__subtitle">Решаем любые проблемы! Большой склад и опытные мастера</div>
+                        <a href="#" class="home__btn">Бесплатная консультация</a>
+                    </div>
+                    <div class="home__master">
+                        <img src="images/bg2.svg" alt="" class="home__bg-icon home__second">
+                        <img src="images/master.png" alt="" class="master__icon">
+                        <div class="master__stock">
+                            <div class="stock__title">50%
+                                <img src="images/stock.svg" alt="" class="stock__icon">
+                            </div>
+                            <div class="stock__texts">
+                                <div class="stock__text">
+                                    скидка на ремонт телефонов, ноутбуков и планшетов до <span class="stock__text--bold">-50%</span>
+                                </div>
+                                <div class="stock__line"></div>
+                                <div class="stock__timer-text">Конец акции:</div>
+                                <div class="countdown">
+                                    <div class="time-section">
+                                        <span class="count" id="days"></span>
+                                        <span class="units">Days</span>
+                                    </div>
+                                    <span class="time__dots">:</span>
+                                    <div class="time-section">
+                                        <span class="count" id="hours"></span>
+                                        <span class="units">Hours</span>
+                                    </div>
+                                    <span class="time__dots">:</span>
+                                    <div class="time-section">
+                                        <span class="count" id="minutes"></span>
+                                        <span class="units">Minutes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/bg3.svg" alt="" class="home__bg-icon home__third">
+                    </div>
+                </div>
+                <div class="home__down">
+                    <div class="home__blocks">
+                        <div class="home__block">
+                            <img src="images/home-icon.svg" alt="" class="home__block-icon">
+                            <div class="home__block-title">Курьер по городу</div>
+                            <div class="home__block-subtitle">Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</div>
+                        </div>
+                        <div class="home__block">
+                            <img src="images/home-icon2.svg" alt="" class="home__block-icon">
+                            <div class="home__block-title">Подменный телефон - Беслатно</div>
+                            <div class="home__block-subtitle">Телефон взамен Беслатно, пока ваш в ремонте</div>
+                        </div>
+                        <div class="home__block">
+                            <img src="images/home-icon3.svg" alt="" class="home__block-icon">
+                            <div class="home__block-title">Забота о вас</div>
+                            <div class="home__block-subtitle">Незначительные поломки - делаем бесплатно.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/bg4.svg" alt="" class="home__bg-icon home__fourth">
+        </section>
+        <section class="devices">
+            <div class="container">
+                <div class="devices__title-container">Мы работаем c устройствами:</div>
+                <div class="devices__device-blocks">
+                    <div class="device-blocks__block">
+                        <img src="images/device.png" alt="" class="device-block__icon">
+                        <div class="device-block__title">Apple</div>
+                        <a href="#" class="device-block__btn">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="device-blocks__block">
+                        <img src="images/device2.png" alt="" class="device-block__icon">
+                        <div class="device-block__title">Android</div>
+                        <a href="#" class="device-block__btn">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                </div>
+                <div class="devices__device-blocks">
+                    <div class="device-blocks__block">
+                        <img src="images/device3.png" alt="" class="device-block__icon">
+                        <div class="device-block__title">Гаджетами</div>
+                        <a href="#" class="device-block__btn">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="device-blocks__block">
+                        <img src="images/device4.png" alt="" class="device-block__icon">
+                        <div class="device-block__title">Ноутбуками</div>
+                        <a href="#" class="device-block__btn">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="device-blocks__block">
+                        <img src="images/device5.png" alt="" class="device-block__icon">
+                        <div class="device-block__title">Моноблоками и PC</div>
+                        <a href="#" class="device-block__btn">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="device-blocks__block">
+                        <img src="images/device6.png" alt="" class="device-block__icon">
+                        <div class="device-block__title">Другими устройствами</div>
+                        <a href="#" class="device-block__btn">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                </div>
+                <div class="devices__slider swiper">
+                    <div class="devices__slider-wrapper swiper-wrapper">
+                        <div class="devices__block swiper-slide">
+                            <img src="images/device.png" alt="" class="devices__device-icon">
+                            <div class="devices__title">Apple</div>
+                            <a href="#" class="devices__btn">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="devices__block swiper-slide">
+                            <img src="images/device2.png" alt="" class="devices__device-icon">
+                            <div class="devices__title">Android</div>
+                            <a href="#" class="devices__btn">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="devices__block swiper-slide">
+                            <img src="images/device3.png" alt="" class="devices__device-icon">
+                            <div class="devices__title">Гаджетами</div>
+                            <a href="#" class="devices__btn">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="devices__block swiper-slide">
+                            <img src="images/device4.png" alt="" class="devices__device-icon">
+                            <div class="devices__title">Ноутбуками</div>
+                            <a href="#" class="devices__btn">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="devices__block swiper-slide">
+                            <img src="images/device5.png" alt="" class="devices__device-icon">
+                            <div class="devices__title">Моноблоками и PC</div>
+                            <a href="#" class="devices__btn">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="devices__block swiper-slide">
+                            <img src="images/device6.png" alt="" class="devices__device-icon">
+                            <div class="devices__title">Другими устройствами</div>
+                            <a href="#" class="devices__btn">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.318L7 7.31799L1 1.31799" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__texts">
+                    <div class="info__title-block">
+                        <div class="info__title">О компании ARRON </div>
+                        <div class="info__subtitle">Узнайте о нашей компании больше из видео за 1 минуту.</div>
+                    </div>
+                    <a href="#" class="info__btn">Смотреть<img src="images/info-arrow.svg" alt="" class="info__btn-icon"></a>
+                </div>
+                <div class="info__blocks">
+                    <div class="info__block">
+                        <img src="images/home-icon.svg" alt="" class="info__block-icon">
+                        <div class="info__block-title">Выезжаем в любую точку Кишинева</div>
+                        <div class="info__block-subtitle">Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</div>
+                    </div>
+                    <div class="info__block">
+                        <img src="images/info-icon.svg" alt="" class="info__block-icon">
+                        <div class="info__block-title">Работы от 30 минут</div>
+                        <div class="info__block-subtitle">Время работы или настройки занимает от 30 минут до несколько часов.</div>
+                    </div>
+                    <div class="info__block">
+                        <img src="images/info-icon2.svg" alt="" class="info__block-icon">
+                        <div class="info__block-title">Удобный способ оплаты</div>
+                        <div class="info__block-subtitle">Оплата наличными или по перечеслению компаниям.</div>
+                    </div>
+                    <div class="info__block">
+                        <img src="images/info-icon3.svg" alt="" class="info__block-icon">
+                        <div class="info__block-title">Гарантия на все выполненые услуги</div>
+                        <div class="info__block-subtitle">Запчасти, фотографии и сообщения под Вашим контролем. После работ инженер отдаст Вам старые запчасти.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <img src="images/bg.svg" alt="" class="bg-icon reviews-first">
+            <div class="container">
+                <div class="reviews__title">Отзывы счастливых клиентов</div>
+                <div class="reviews__slider swiper">
+                    <div class="reviews__slider-wrapper swiper-wrapper">
+                        <div class="reviews__slide swiper-slide">
+                            <video src="#" poster="images/review-icon.png" class="reviews__slide-video">
+                            </video>
+                            <button class="video__btn">
+                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 1.08167C0.75 0.290499 1.62525 -0.187342 2.29076 0.240487L9.9415 5.15882C10.5538 5.55246 10.5538 6.44754 9.9415 6.84118L2.29076 11.7595C1.62525 12.1873 0.75 11.7095 0.75 10.9183V1.08167Z" fill="#E2001A"/>
+                                </svg> 
+                            </button>
+                        </div>
+                        <div class="reviews__slide swiper-slide">
+                            <video src="#" poster="images/review-icon2.png" class="reviews__slide-video">
+                            </video>
+                            <button class="video__btn">
+                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 1.08167C0.75 0.290499 1.62525 -0.187342 2.29076 0.240487L9.9415 5.15882C10.5538 5.55246 10.5538 6.44754 9.9415 6.84118L2.29076 11.7595C1.62525 12.1873 0.75 11.7095 0.75 10.9183V1.08167Z" fill="#E2001A"/>
+                                </svg>  
+                            </button>
+                        </div>
+                        <div class="reviews__slide swiper-slide">
+                            <video src="#" poster="images/review-icon3.png" class="reviews__slide-video">
+                            </video>
+                            <button class="video__btn">
+                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 1.08167C0.75 0.290499 1.62525 -0.187342 2.29076 0.240487L9.9415 5.15882C10.5538 5.55246 10.5538 6.44754 9.9415 6.84118L2.29076 11.7595C1.62525 12.1873 0.75 11.7095 0.75 10.9183V1.08167Z" fill="#E2001A"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="reviews__slide swiper-slide">
+                            <video src="#" poster="images/review-icon4.png" class="reviews__slide-video">
+                            </video>
+                            <button class="video__btn">
+                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 1.08167C0.75 0.290499 1.62525 -0.187342 2.29076 0.240487L9.9415 5.15882C10.5538 5.55246 10.5538 6.44754 9.9415 6.84118L2.29076 11.7595C1.62525 12.1873 0.75 11.7095 0.75 10.9183V1.08167Z" fill="#E2001A"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13.2925L7 7.29248L1 1.29248" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00012 13.2925L1.00012 7.29248L7.00012 1.29248" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <img src="images/bg4.svg" alt="" class="bg-icon reviews-fourth">
+        </section>
+        <section class="completed">
+            <div class="container">
+                <div class="completed__title">Выполненные заказы</div>
+                <div class="completed__swiper swiper">
+                    <div class="completed__slider swiper-wrapper">
+                        <div class="completed__slider-slide swiper-slide">
+                            <img src="images/completed-icon.png" alt="" class="completed__slide-icon">
+                        </div>
+                        <div class="completed__slider-slide swiper-slide">
+                            <img src="images/completed-icon2.png" alt="" class="completed__slide-icon">
+                        </div>
+                        <div class="completed__slider-slide swiper-slide">
+                            <img src="images/completed-icon3.png" alt="" class="completed__slide-icon">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13.2925L7 7.29248L1 1.29248" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00012 13.2925L1.00012 7.29248L7.00012 1.29248" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services__block">
+                    <div class="services__block-title">Что делать если ноутбук или телефон медлено работает</div>
+                    <div class="services__block-down">
+                        <div class="services__block-text"> <img src="images/services-icon.svg" class="services__block-text-icon"> Получите чек лист - Что делать, если ноутбук или телефон грузится</div>
+                        <a href="#" class="services__block-btn">Получить чек лист</a>
+                    </div>
+                </div>
+                <div class="services__our-services">
+                    <div class="our-services__title">наши услуги</div>
+                    <div class="our__services">
+                        <ul class="our__services-block services-first">
+                            <li class="our__service">ремонт ноутбуков</li>
+                            <li class="our__service">ремонт смартфонов</li>
+                            <li class="our__service">заправка и ремонт картриджей</li>
+                            <li class="our__service">установка СНПЧ</li>
+                            <li class="our__service">ремонт компьютеров</li>
+                            <li class="our__service">ремонт моноблоков</li>
+                            <li class="our__service--disable">ремонт планшетов</li>
+                        </ul>
+                        <ul class="our__services-block services-second">
+                            <li class="our__service--active">ремонт планшетов</li>
+                            <li class="our__service">ремонт КПК</li>
+                            <li class="our__service">ремонт мониторов</li>
+                            <li class="our__service">ремонт принтеров</li>
+                            <li class="our__service">ремонт роутеров</li>
+                            <li class="our__service">восстановление жестких дисков</li>
+                            <li class="our__service">компьютерная помощь и IT аутсорсинги др.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="images/bg4.svg" alt="" class="bg-icon our-fourth">
+            <img src="images/bg.svg" alt="" class="bg-icon our-first">
+        </section>
+        <section class="present">
+            <div class="container">
+                <div class="present__title">На каждый ремонт гарантировано подарок на ваш выбор :</div>
+                <div class="present__swiper swiper">
+                    <div class="present__slider swiper-wrapper">
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Чехлы</div>
+                        </div>
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon2.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Защитные стёкла</div>
+                        </div>
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon3.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Кабели</div>
+                        </div>
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon4.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Car holder</div>
+                        </div>
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon5.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Зарядки</div>
+                        </div>
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon6.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Наушники</div>
+                        </div>
+                        <div class="present__slide swiper-slide">
+                            <img src="images/present-icon7.png" alt="" class="present__slide-icon">
+                            <div class="present__slide-title">Другие устройства</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13.2925L7 7.29248L1 1.29248" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00012 13.2925L1.00012 7.29248L7.00012 1.29248" stroke="#E2001A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="workers">
+            <div class="container">
+                <blockquote class="workers__quote"><img src="images/quote.svg" alt="" class="workers__qoute-icon"><p>В нашей компании работают лучшие специалисты, которые прекрасно разбираются в современных технологиях и имеют более 3-х лет опыта работы.</p><img src="images/quote2.svg" alt="" class="workers__qoute-icon"></blockquote>
+                <div class="workers__block">
+                    <div class="workers__texts">
+                        <div class="workers__texts-text">За счет этого мы гарантируем устранение любых неполадок и предоставляем гарантию на все выполненные работы.</div>
+                        <div class="workers__texts-text">Мы поможем не только восстановить работоспособность техники, но и подскажем, как избежать возникновения подобных поломок в будущем.</div>
+                        <div class="workers__texts-text">Квалифицированная консультация специалиста поможет безопасно пользоваться компьютером. В нашем штате работают опытные специалисты.</div>
+                    </div>
+                    <div class="workers__swiper swiper">
+                        <div class="workers__slider swiper-wrapper">
+                            <div class="workers__slider-slide swiper-slide">
+                                <img src="images/workers-icon.png" alt="" class="workers__slide-icon">
+                            </div>
+                            <div class="workers__slider-slide swiper-slide">
+                                <img src="images/workers-icon.png" alt="" class="workers__slide-icon">
+                            </div>
+                            <div class="workers__slider-slide swiper-slide">
+                                <img src="images/workers-icon.png" alt="" class="workers__slide-icon">
+                            </div>
+                            <div class="workers__slider-slide swiper-slide">
+                                <img src="images/workers-icon.png" alt="" class="workers__slide-icon">
+                            </div>
+                            <div class="workers__slider-slide swiper-slide">
+                                <img src="images/workers-icon.png" alt="" class="workers__slide-icon">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="container">
+                <form action="#" class="form__block">
+                    <div class="form__texts">
+                        <div class="form__rebate">50%
+                            <img src="images/stock.svg" alt="" class="form__icon">
+                        </div>
+                        <div class="form__title">Записаться на диагностику в <span class="form__title--color">удобное</span> вам время</div>
+                    </div>
+                    <div class="form__inputs">
+                        <div class="form__inputs-up">
+                            <input required placeholder="День" type="text" class="form__input first-input"></input>
+                            <input required placeholder="Время" type="text" min="09:00" max="20:00" placeholder="Время" class="form__input second-input"></input>
+                        </div>
+                        <input required placeholder="Телефон" type="tel" onkeypress="return (event.charCode >= 48 && event.charCode <= 57 && /^\d{0,11}$/.test(this.value));" maxlength="11"  class="form__input third-input"></input>
+                        <button class="form__btn">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__title">наши контакты</div>
+                <div class="contacts__down">
+                    <div class="contacts__swiper swiper">
+                        <div class="contacts__slider swiper-wrapper">
+                            <div class="contacts__slide swiper-slide">
+                                <img src="images/contacts-icon.png" alt="" class="contacts__slide-icon">
+                            </div>
+                            <div class="contacts__slide swiper-slide">
+                                <img src="images/contacts-icon.png" alt="" class="contacts__slide-icon">
+                            </div>
+                            <div class="contacts__slide swiper-slide">
+                                <img src="images/contacts-icon.png" alt="" class="contacts__slide-icon">
+                            </div>
+                            <div class="contacts__slide swiper-slide">
+                                <img src="images/contacts-icon.png" alt="" class="contacts__slide-icon">
+                            </div>
+                            <div class="contacts__slide swiper-slide">
+                                <img src="images/contacts-icon.png" alt="" class="contacts__slide-icon">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <img src="images/contacts-img.png" class="contacts__icon"></img>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__up">
+                <div class="phone__block">
+                    <img src="images/footer-phone.svg" alt="" class="phone__block-icon">
+                    <a href="tel:069827738" class="phone__block-link">069 82 77 38 </a>
+                    <span class="number__line">/</span>
+                    <a href="tel:079927738" class="phone__block-link second-number"> 079 92 77 38</a>
+                </div>
+                <div class="mail__block">
+                    <img src="images/footer-mail.svg" alt="" class="mail__block-icon">
+                    <a href="mailto:info@arron.md" class="mail__block-link">info@arron.md</a>
+                </div>
+                <div class="address__block">
+                    <img src="images/address.svg" alt="" class="address__block-icon">
+                    <div class="address__block-text">г. Кишинев, ул. Бэнулеску Бодони, д.33</div>
+                </div>
+            </div>
+            <div class="footer__down">
+                <div class="rating__block">
+                    <div class="rating__title">Рейтинг сервиса</div>
+                    <img src="images/rating.svg" alt="" class="rating__icon">
+                    <div class="rating__grade">4.8/5.0 - 403 голоса</div>
+                </div>
+                <div class="social__block">
+                    <div class="social__title">Мы в соцсетях</div>
+                    <div class="social__links">
+                        <a href="#" class="social__link">
+                            <img src="images/instagram.svg" alt="" class="social__link-icon">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="images/facebook.svg" alt="" class="social__link-icon">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="images/tiktok.svg" alt="" class="social__link-icon">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="images/youtube.svg" alt="" class="social__link-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A94523bcfb531a0701b41fa0dd2f5f812561d350f53173922084e39ef9854029c&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
